@@ -62,9 +62,8 @@ function onMapReady() {
         //------------------------------------
         var htmlInfoWnd = new plugin.google.maps.HtmlInfoWindow();
         markerCluster.on(plugin.google.maps.event.MARKER_CLICK, function (position, marker) {
-          console.log('click marker');
-          marker.on(plugin.google.maps.event.INFO_CLICK, function () {
-            console.log('info click');
+          marker.on(plugin.google.maps.event.INFO_CLICK, () => {
+            alert('info click');
           });
         });
 
