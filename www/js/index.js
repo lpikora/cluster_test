@@ -62,20 +62,24 @@ function onMapReady() {
         //------------------------------------
         var htmlInfoWnd = new plugin.google.maps.HtmlInfoWindow();
         markerCluster.on(plugin.google.maps.event.MARKER_CLICK, function (position, marker) {
-          var html = [
-            "<div style='width:250px;min-height:100px'>",
-            "<img src='img/starbucks_logo.gif' align='right'>",
-            "<strong>" + (marker.get("title") || marker.get("name")) + "</strong>"
-          ];
-          if (marker.get("address")) {
-            html.push("<div style='font-size:0.8em;'>" + marker.get("address") + "</div>");
-          }
-          if (marker.get("phone")) {
-            html.push("<a href='tel:" + marker.get("phone") + "' style='font-size:0.8em;color:blue;'>Tel: " + marker.get("phone") + "</div>");
-          }
-          html.push("</div>");
-          htmlInfoWnd.setContent(html.join(""));
-          htmlInfoWnd.open(marker);
+          console.log('click marker');
+          marker.on(plugin.google.maps.event.INFO_CLICK, function () {
+            console.log('info click');
+          });
+          // var html = [
+          //   "<div style='width:250px;min-height:100px'>",
+          //   "<img src='img/starbucks_logo.gif' align='right'>",
+          //   "<strong>" + (marker.get("title") || marker.get("name")) + "</strong>"
+          // ];
+          // if (marker.get("address")) {
+          //   html.push("<div style='font-size:0.8em;'>" + marker.get("address") + "</div>");
+          // }
+          // if (marker.get("phone")) {
+          //   html.push("<a href='tel:" + marker.get("phone") + "' style='font-size:0.8em;color:blue;'>Tel: " + marker.get("phone") + "</div>");
+          // }
+          // html.push("</div>");
+          // htmlInfoWnd.setContent(html.join(""));
+          // htmlInfoWnd.open(marker);
         });
 
 
