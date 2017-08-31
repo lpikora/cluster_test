@@ -1,6 +1,23 @@
 var data = [
   {
     "position": {
+      "lat": 40.76182387,
+      "lng": -73.98120929
+    },
+    "title": "Starbucks - NY - New York [W]  06164",
+    "icon": "img/starbucks.png"
+
+  },
+  {
+    "position": {
+      "lat": 40.76182387,
+      "lng": -73.98120
+    },
+    "title": "Marker 2",
+    "icon": "img/starbucks.png"
+  },
+  {
+    "position": {
       "lat": 61.21759217,
       "lng": -149.8935557
     },
@@ -53364,15 +53381,7 @@ var data = [
     "icon": "img/starbucks.png"
 
   },
-  {
-    "position": {
-      "lat": 40.76182387,
-      "lng": -73.98120929
-    },
-    "title": "Starbucks - NY - New York [W]  06164",
-    "icon": "img/starbucks.png"
 
-  },
   {
     "position": {
       "lat": 40.76193376,

@@ -4,7 +4,7 @@ document.addEventListener("deviceready", function () {
     var options = {
         'camera': {
             'target': data[0].position,
-            'zoom': 3
+            'zoom': 15
         }
     };
     var map = plugin.google.maps.Map.getMap(mapDiv, options);
@@ -60,7 +60,7 @@ function onMapReady() {
         // you can get the marker instnace.
         // Then you can do what ever you want.
         //------------------------------------
-        var htmlInfoWnd = new plugin.google.maps.HtmlInfoWindow();
+
         markerCluster.on(plugin.google.maps.event.MARKER_CLICK, function (position, marker) {
           marker.on(plugin.google.maps.event.INFO_CLICK, () => {
             alert('info click');
