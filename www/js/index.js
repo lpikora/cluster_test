@@ -85,7 +85,7 @@ function addCluster(map, data) {
 
           markerCluster.on(plugin.google.maps.event.MARKER_CLICK, function (position, marker) {
               alert('marker click');
-            marker.on(plugin.google.maps.event.INFO_CLICK, () => {
+            marker.on(plugin.google.maps.event.INFO_CLICK, function () {
               alert('info click');
             });
           });
