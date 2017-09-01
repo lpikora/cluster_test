@@ -49,9 +49,8 @@ function addCluster(map, data) {
         ]
       }, function (markerCluster) {
 
-          markerCluster.name = "test";
 
-          alert('cluster added ' + markerCluster.name)
+          alert('cluster added ' + markerCluster.id)
   
           //-----------------------------------------------------------------------
           // Display the resolution (in order to understand the marker cluster)
@@ -70,7 +69,7 @@ function addCluster(map, data) {
           //----------------------------------------------------------------------
           var removeBtn = document.getElementById("removeClusterBtn");
           removeBtn.addEventListener("click", function() {
-            alert('remove cluster ' + markerCluster.name);
+            alert('remove cluster ' + markerCluster.id);
             markerCluster.remove();
           }, {
             once: true
@@ -82,12 +81,16 @@ function addCluster(map, data) {
           // Then you can do what ever you want.
           //------------------------------------
   
+         console.log(markerCluster);
+
           markerCluster.on(plugin.google.maps.event.MARKER_CLICK, function (position, marker) {
               alert('marker click');
             marker.on(plugin.google.maps.event.INFO_CLICK, () => {
               alert('info click');
             });
           });
+
+          console.log(markerCluster);
 
         });
 
