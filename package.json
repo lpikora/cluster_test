@@ -20,7 +20,7 @@
         "cordova-android": "^6.2.3",
         "cordova-ios": "~4.4.0",
         "cordova-plugin-console": "^1.0.7",
-        "cordova-plugin-googlemaps": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#multiple_maps",
+        "cordova-plugin-googlemaps": "git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git#c43ae1c1a5cea6236085957962cd85891d3ec15e",
         "cordova-plugin-whitelist": "^1.3.2"
     }
 }
