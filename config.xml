@@ -23,11 +23,13 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="android" spec="^6.2.3" />
-    <engine name="ios" spec="~4.4.0" />
+    <engine name="ios" spec="^4.4.0" />
     <plugin name="cordova-plugin-console" spec="^1.0.7" />
-    <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
-    <plugin name="cordova-plugin-googlemaps" spec="https://github.com/mapsplugin/cordova-plugin-googlemaps#c43ae1c1a5cea6236085957962cd85891d3ec15e">
+    <plugin name="cordova-plugin-googlemaps" spec="git+https://github.com/mapsplugin/cordova-plugin-googlemaps.git">
         <variable name="API_KEY_FOR_ANDROID" value="AIzaSyDxcpD1OByQYENU_2Rtn9wr9WiX-PAAQcA" />
         <variable name="API_KEY_FOR_IOS" value="AIzaSyA-Jj8R0y7mDNvkzjfpm7tEreBQMNzJdZI" />
+        <variable name="LOCATION_WHEN_IN_USE_DESCRIPTION" value="Show your location on the map" />
+        <variable name="LOCATION_ALWAYS_USAGE_DESCRIPTION" value="Trace your location on the map" />
     </plugin>
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
 </widget>

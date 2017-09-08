@@ -69,7 +69,6 @@ function addCluster(map, data) {
           //----------------------------------------------------------------------
           var removeBtn = document.getElementById("removeClusterBtn");
           removeBtn.addEventListener("click", function() {
-            alert('remove cluster ' + markerCluster.id);
             markerCluster.remove();
           }, {
             once: true
@@ -84,9 +83,8 @@ function addCluster(map, data) {
          console.log(markerCluster);
 
           markerCluster.on(plugin.google.maps.event.MARKER_CLICK, function (position, marker) {
-              alert('marker click');
+              console.log('click marker')
             marker.on(plugin.google.maps.event.INFO_CLICK, function () {
-              alert('info click');
             });
           });
 
